@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+    <style>
+        #pierwszy{
+            background:blue ;
+            height: 60px;
+            width: 60px;
+            border-radius: 100px;
+            left: 50px;
+            top: 200px;
+            position: absolute;
+        }
+        #drugi{
+            background: red;
+            height: 60px;
+            width: 60px;
+            border-radius: 100px;
+            left: 50px;
+            top: 300px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="page">
+            <button id="start1">&raquo;Start niebieski</button>  
+            <button id="start2">&raquo;Start czerwony</button>
+            <button id="start3">&raquo;Start oba</button>
+            <button id="stop">&raquo;Stop</button>
+            <button id="reset">&raquo;Od nowa</button>
+
+            <div id="pierwszy" class="kulka"></div>
+            <div id="drugi" class="kulka"></div>
+            <div id="log"></div>
+        </div>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(function(){
+            $('#start1').on('click',function(){
+                const div = $('#pierwszy');
+                div.animate({'left':'+=300px'},'slow');
+                div.animate({'top':'+=50px'},'slow');
+                div.animate({'left':'+=700px'},600);
+            });
+            $('#start2').on('click',function(){
+                const div = $('#drugi');
+                div.animate({'left':'+=300px'},'slow');
+                div.animate({'top':'+=50px'},'slow');
+                div.animate({'left':'+=700px'},800);
+            });
+            $('#start3').on('click',function(){
+                $('#start1,#start2').click();
+            });
+            $('#reset').on('click',function(){
+                $('#log').text('');
+                $('#pierwszy,#drugi').css({left:'',top:''});
+            });
+            $('#stop').click(function(){
+                const kulka = $('.kulka');
+                kulka.clearQueue();
+                kulka.stop();
+            });
+        });
+    </script>
+</body>
+</html>
