@@ -1,0 +1,135 @@
+
+.header1 {
+    width: 16.6%;
+    background-color: red;
+    float: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px
+}
+
+.header2 {
+    width: 16.6%;
+    background-color: green;
+    float: left;
+    
+    text-align: center;
+    margin-top: auto;
+}
+
+.header3 {
+    width: 16.6%;
+    background-color: black;
+    float: left;
+    text-align: center;
+}
+
+.header4 {
+    width: 16.6%;
+    background-color: blue;
+    float: left;
+    text-align: center;
+}
+
+.header5 {
+    width: 16.6%;
+    background-color: yellow;
+    float: left;
+    text-align: center;
+}
+
+.header6 {
+    width: 16.6%;
+    background-color: cyan;
+    float: left;
+    text-align: center;
+}
+
+.main1 {
+    width: 50%;
+    clear: both;
+    float: left;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.main2 {
+    width: 50%;
+    float: left;
+    position: relative;
+    background-color: chocolate;
+}
+
+.main2 img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.photo1 {
+    clear: both;
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    background-color: royalblue;
+}
+
+.photo2 {
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    background-color:deeppink;
+}
+
+.photo3 {
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    background-color:darkmagenta;
+}
+
+.photo4 {
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    background-color: royalblue;
+}
+
+.photo5 {
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    background-color:forestgreen;
+}
+
+.photo6 {
+    float: left;
+    width: 16.6%;
+    text-align: center;
+    background-color:crimson;
+}
+
+.sub1 {
+    float: left;
+    clear: both;
+    width: 33.3%;
+    background-color: coral;
+}
+
+.sub2 {
+    float: left;
+    width: 33.3%;
+    background-color: darkslateblue;
+}
+
+.sub3 {
+    float: left;
+    width: 33.3%;
+    background-color: darkturquoise;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}

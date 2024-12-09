@@ -1,0 +1,10 @@
+.olzaimg {
+    border: 20px solid blue;
+    padding: 10px;
+}
+
+.olzatext {
+    color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px blue;
+}
