@@ -1,0 +1,5 @@
+czerwony
+zielony
+fioletowy
+niebieski
+czarny
