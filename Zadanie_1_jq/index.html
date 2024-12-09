@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script src="/jquery-3.7.1.js" ></script>
+
+    <div id="contener">
+
+        <h4>Pole formularaz input type text:</h4>
+        <input type="text" value="przykładowy tekst">
+        <p></p>
+        <hr>
+
+        <h4>Pole jednokrotnego wyboru:</h4>
+        Języki programowania wykorzystujesz do tworzenia:
+        <select id="tylko_jeden">
+            <option> Stron Internetowych </option>
+            <option> Aplikacji desktopowych </option>
+            <option> Aplikacji mobilnych </option>
+            <option> Inne </option>
+        </select>
+        <div id="ulubionyJezyk"></div>
+        <div id="log"></div>
+
+        <h4> Pole welokrotnego wyboru:</h4>
+        Pytanie pozostaje to samo ale można wybrać więcej opcji:
+        <select id="wiele" multiple>
+            <option> Stron Internetowych </option>
+            <option> Aplikacji desktopowych </option>
+            <option> Aplikacji mobilnych </option>
+            <option> Inne </option>
+        </select>
+        <p></p>
+        <hr>
+
+    </div>
+
+    <script>
+
+        // Pole tekstowe
+        $('input').on('keyup', function() {
+            const wartosc = $(this).val();
+            $('p').eq(0).text(wartosc);
+        }).keyup();
+
+        // Pole jednokrotneg wyboru 
+
+        function wyswietlPojedynczyWybor() {
+            const pojedynczyWybor = $('#tylkojeden').val();
+            $('p').eq(1).text('Twój wybór to: '  pojedynczyWybor);
+        }
+
+        // Pole wieloktrotnego wyboru
+
+        
+
+    </script>
+    
+</body>
+
+</html>

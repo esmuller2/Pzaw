@@ -1,0 +1,37 @@
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zadania</title>
+
+    <style>
+
+        .tlo {
+            background-color: blue;
+        }
+
+        .czcionka {
+            font-size: 150%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <script src="jquery-3.7.1.js"></script>
+
+    <p class="tlo czcionka">Akapit</p>
+    <button id="usun">Usuń css</button>
+
+
+    <script>
+
+        $(document).ready(function() {
+            $('#usun').click(function() {
+                $('p').removeClass('tlo czcionka');
+            });
+        });
+
+    </script>

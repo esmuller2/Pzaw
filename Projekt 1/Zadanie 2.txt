@@ -1,0 +1,18 @@
+<body>
+    <script src="jquery-3.7.1.js"></script>
+
+    <input type="checkbox" id="check">Akceptuj
+    <button disabled>Wyślij</button>
+
+    <script>
+
+        $(document).ready(function() {
+            $('#check').change(function() {
+                $('button').prop('disabled', !this.checked);
+            });
+        });
+
+    </script>
+
+    
+</body>

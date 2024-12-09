@@ -1,0 +1,21 @@
+<body>
+    <script src="jquery-3.7.1.js"></script>
+
+    <h1>Znacznik H1</h1>
+    <h2>Znacznik H2</h2>
+    <p>Znacznik p</p>
+    <span>Znacznik span</span> <br> <br>
+    <button>Element button</button>
+    <p id="wynik"></p>
+
+    <script>
+
+        $(document).ready(function() {
+            $('h1, h2, p, span, button').click(function() {
+                $('#wynik').text('Kliknięto: ' + this.tagName);
+            });
+        });
+
+    </script>
+    
+</body>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script src="./jquery-3.7.1.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('input').on('focus', function() {
+                $('span').eq(0).css('display', 'inline').fadeOut(4500);
+            });
+
+            $('input').on('blur', function() {
+                $('span').eq(1).css('display','inline').fadeOut(4500);
+            });
+        });
+
+        $(function() {
+
+            let i = 0;
+            let n = 0;
+            $('#wew').mouseover(function(){
+                i += 1;
+                $('#komunikat').text("Najechano na prostokąt " + i + " razy");
+            }).mouseout(function(){
+                $('#komunikat').text("Upuszczono obszar prostokąta");
+            });
+            $("#wew").click(function() {
+                n += 1;
+                $("#komunikat").text("Kliknięto prostokąt " + n + " razy");
+            });
+
+        });                                                                                                                                    n   
+    </script>
+
+    <div id="container">
+
+        <div id="page">
+
+            Wpisz dowolny tekst: <input type="text">
+
+        </div>
+    </div>
+    
+</body>
+</html>

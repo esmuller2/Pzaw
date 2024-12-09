@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        #pierwszy {
+            background-color: blue;
+            height: 60px;
+            width: 60px;
+            border-radius: 100px;
+            left: 50px;
+            top: 200px;
+            position: absolute;
+        }
+
+        #drugi {
+            background-color: red;
+            height: 60px;
+            width: 60px;
+            border-radius: 100px;
+            left: 50px;
+            top: 300px;
+            position: absolute;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <script src="./jquery-3.7.1.js"  type="text/javascript"></script>
+
+    <div id="container">
+        <div id="page">
+
+            <button id="start1"> &raquo; Start Niebieski</button>
+            <button id="start2"> &raquo; Start Czerwony</button>
+            <button id="start3"> &raquo; Start Obie</button>
+            <button id="stop"> &raquo; Stop</button>
+            <button id="reset"> &raquo; Od Nowa</button>
+            
+            <div id="pierwszy" class="kulka"></div>
+            <div id="drugi" class="kulka"></div>
+            <div id="log"></div>
+
+        </div>
+    </div>
+
+    <script>    
+
+        $(function() {
+            $('#start1').on("click", function() {
+                const div = $('#pierwszy');
+                div.animate({'left':'+= 300'},'slow');
+                div.animate({'top':'+= 50'},'slow');
+                div.animate({'left':'+= 700'},600);
+            });
+
+            $('#start2').on('click', function() {
+                const div = $('#drugi');
+                div.animate({'left' : '+= 300'}, 'slow');
+                div.animate({'top' : '+= 50'}, 'slow');
+                div.animate({'left' : '+= 700'},600);
+            });
+
+            $('#start3').on('click', function() {
+                $('#start1', '#start2').click();
+            });
+
+            $('#reset').on('click', function() {
+                $('#log').text;
+                $('#pierwszy').css({left: ' ', top: ' '});
+            });
+
+            $('#reset').on('click', function() {
+                $('#log').text;
+                $('#pierwszy').css({left: ' ', top: ' '});
+            });
+        });
+
+    </script>
+
+
+    
+</body>
+
+</html>
